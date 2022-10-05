@@ -1,2 +1,3 @@
-# renovate-config
-Configuration for the renovate bot.
+# Renovate Config
+
+Configuration for the [renovate bot](https://app.renovatebot.com/).

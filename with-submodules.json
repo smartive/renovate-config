@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "git-submodules": {
+    "enabled": true,
+    "packageRules": [
+      {
+        "matchFiles": [".gitmodules"],
+        "groupName": "external submodules",
+        "groupSlug": "submodules",
+        "semanticCommitType": "chore",
+        "semanticCommitScope": "submodules"
+      }
+    ]
+  }
+}

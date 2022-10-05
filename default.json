@@ -1,0 +1,25 @@
+{
+  "$schema": "http://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":disableDependencyDashboard"],
+  "labels": ["dependencies"],
+  "vulnerabilityAlerts": {
+    "labels": ["dependencies-security"]
+  },
+  "branchConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "onboarding": true,
+  "onboardingConfig": {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["github>buehler/renovate-config"]
+  },
+  "automerge": true,
+  "timezone": "Europe/Zurich",
+  "schedule": ["after 9pm", "before 6am"],
+  "dotnet": {
+    "extends": ["github>buehler/renovate-config:dotnet-solution"]
+  },
+  "rust": {
+    "extends": ["github>buehler/renovate-config:rust"]
+  }
+}

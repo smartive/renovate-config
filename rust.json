@@ -1,0 +1,13 @@
+{
+  "$schema": "http://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["prost", "tonic"],
+      "groupName": "grpc packages"
+    },
+    {
+      "matchPackagePrefixes": ["serde"],
+      "groupName": "serde packages"
+    }
+  ]
+}

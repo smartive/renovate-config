@@ -1,0 +1,26 @@
+{
+  "$schema": "http://docs.renovatebot.com/renovate-schema.json",
+  "ignorePaths": [],
+  "packageRules": [
+    {
+      "paths": ["tests/**/*", "config/CodeAnalysis.targets"],
+      "groupName": "testing dependencies",
+      "groupSlug": "test",
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "test deps"
+    },
+    {
+      "paths": ["build/**/*"],
+      "groupName": "build dependencies",
+      "groupSlug": "build",
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "build deps"
+    },
+    {
+      "paths": ["src/**/*"],
+      "groupName": "dependencies",
+      "semanticCommitType": "fix",
+      "semanticCommitScope": "deps"
+    }
+  ]
+}
