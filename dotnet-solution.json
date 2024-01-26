@@ -10,6 +10,15 @@
       "semanticCommitScope": "test deps"
     },
     {
+      "matchPackagePatterns": [
+        "(.*)[aA]nalyzer(s?)(.*)"
+      ],
+      "groupName": "linting dependencies",
+      "groupSlug": "lint",
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "lint deps"
+    },
+    {
       "paths": ["build/**/*"],
       "groupName": "build dependencies",
       "groupSlug": "build",
